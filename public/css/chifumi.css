@@ -1,0 +1,73 @@
+.btn_tag {
+  width: 200px;
+  background-color: aquamarine;
+  border: none;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 2em;
+  border-radius: 30px;
+}
+#btn_tag {
+  margin: auto;
+  text-align: center;
+}
+.header{
+  background-color: bisque;
+  margin-bottom: 2em;
+}
+.header__logo {
+  font-size: 2em;
+  color: red;
+  text-align: center;
+  margin: 0em 0 2em 0 ;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.header__nav ul{
+  width: 30%;
+  display: flex;
+  justify-content:space-between;
+  margin:auto;
+  list-style: none;
+  font-size:1em;
+  padding-bottom: 20px;
+ 
+}
+.header__nav ul li a{
+  text-decoration: none;
+  color: rgb(85, 50, 14);
+  font-weight: bold;
+  padding: 2em;
+  
+}
+
+#resultat {
+  margin-top: 3em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+
+}
+.gamer {
+  display: flex;
+}
+#player {
+  margin-top: 1em;
+  width: 50%;
+  text-align: center;
+  
+}
+#computer {
+  margin-top: 1em;
+  width: 50%;
+  text-align: center;
+ 
+  
+}
+
+#computer img {
+  transform: scalex(-1);
+}
+.choix_image {
+  height: 250px;
+}

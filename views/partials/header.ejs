@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <% if(resultat){ %>
+  <title> <%= resultat.title%> </title>
+  <% } else {%>
+    <title> GameHub </title>
+    <%}%>
+  <link rel="stylesheet" href="/css/style.css">
+ <% if(resultat){ %>
+    <link rel="stylesheet" href="/css/<%=resultat.cssFile%>">
+    <%  }%>
+
+</head>
+<body>
+    <header>
+        <h1>
+          <a href="/">GameHub</a>
+        </h1>
+
+        <nav>
+          <ul>
+            <% for(const elem of game) { %>
+                <li>
+                  <a href="/game/<%=elem.jsFile %>">
+                    <%= elem.title %>
+                  </a>
+                </li>
+                <% } %>
+          </ul>
+        </nav>
+    </header>
